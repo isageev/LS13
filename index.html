@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Карта обучения</title>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(Images/Background/Background-1920-1080.jpg);
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    
+    }
+
+.conteiner-1 {
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-2 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-3 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-4 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-5 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-6 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-7 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.conteiner-8 {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+ul {
+    margin-top: 1%;
+}
+
+li {
+    text-align: left;
+    color: aliceblue;
+    font-size: 70%;    
+    margin-left: 3%;
+
+}
+
+.icon {
+    width: 10%;
+    margin: 0;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+    [data-tooltip] {
+    position: relative; 
+   }
+
+   [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute; 
+    width: 150px; 
+    left: 0; top: 0; 
+    background: #0e1820; 
+    color: rgb(255, 255, 255);
+    font-size: small;
+    padding: 0.5em; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none; 
+    opacity: 0; 
+    transition: 1s; 
+   } 
+
+   [data-tooltip]:hover::after {
+    opacity: 1; 
+    top: 2em;
+   }
+
+        </style>
+    </head>
+    <body>
+        <div class="conteiner-1">
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="materialy-podoshv" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/qO36vi" target="_blank">
+                    <span data-tooltip="Курс &laquo;Материалы подошв&raquo;"><img class="znak" src="Images/Green/11-green.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div id="formal" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/z8eMMc" target="_blank">
+                    <span data-tooltip="Тест &laquo;Мужская и женская обувь Formal&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-1.png">
+            </div>
+            <div id="zopp" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/eFrXZ4" target="_blank">
+                    <span data-tooltip="Курс &laquo;Закон о Защите Прав Потребителей&raquo;"><img class="znak" src="Images/Green/15-green.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+        </div>
+        <div class="conteiner-2">
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-1.png">
+            </div>
+            <div id="start" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/xMeEXm" target="_blank">
+                    <span data-tooltip="Курс &laquo;Welcome&raquo;"><img class="znak" src="Images/Start-Finish/start.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="chek-sfop" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/hy6xsH" target="_blank">
+                    <span data-tooltip="Тест &laquo;Отработка этапов СФОП&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-3.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-1.png">
+            </div>
+            <div id="finish" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/pYVuzH" target="_blank">
+                    <span data-tooltip="Тест &laquo;Аудит качества использования техник СФОП&raquo;"><img class="znak" src="Images/Start-Finish/finish.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-10">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+        </div>
+        <div class="conteiner-3">
+            <div class="icon">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-1.png">
+            </div>
+            <div id="material-verkha" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/TmQiA9" target="_blank">
+                    <span data-tooltip="Курс &laquo;Материалы верха&raquo;"><img class="znak" src="Images/Green/09-green.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="VM" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/UDnFp0" target="_blank">
+                    <span data-tooltip="Курс &laquo;Визуальный мерчендайзинг&raquo;"><img class="znak" src="Images/Green/14-green.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-4.png">
+            </div>
+            <div id="tovarnuy-assortiment" class="icon">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/3aMdFn" target="_blank">
+                    <span data-tooltip="Тест &laquo;Товарный ассортимент&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
+                </a>
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Ugol-3.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+        </div>
+        <div class="conteiner-4">
+            <div id="sfop" class="icon icon-1">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/cA2BHC" target="_blank">
+                    <span data-tooltip="Курс &laquo;СФОП&raquo;"><img class="znak" src="Images/Green/01-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-2">
+                <img src="Images/Colorless/Ugol-2.png">
+            </div>
+            <div class="icon icon-3">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="proizvodstvo kozhi" class="icon icon-4">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/1HGDLU" target="_blank">
+                    <span data-tooltip="Курс &laquo;Производство кожи&raquo;"><img class="znak" src="Images/Green/08-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-5">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div class="icon icon-6">
+                <img src="Images/Colorless/Ugol-2.png">
+            </div>
+            <div class="icon icon-7">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon icon-8">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-9">
+                <img src="Images/Colorless/Ugol-4.png">
+            </div>
+            <div id="entciklopediya" class="icon icon-10">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/2G85UK" target="_blank">
+                    <span data-tooltip="Курс &laquo;Энциклопедия ECCO&raquo;"><img class="znak" src="Images/Green/24-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-11">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div class="icon icon-12">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div class="icon icon-13">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div class="icon icon-14">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div id="itogovoe-zadanie" class="icon icon-15">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/OPje6w" target="_blank">
+                    <span data-tooltip="Тест &laquo;Итоговое задание по курсу &laquo;Продукт&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
+                </a>
+            </div>
+        </div>
+        <div class="conteiner-5">
+            <div class="icon icon-1">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="casual" class="icon icon-2">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/8Fccpz" target="_blank">
+                    <span data-tooltip="Тест &laquo;Мужская и женская обувь Casual&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-3">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-4">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-5">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="outdoor" class="icon icon-6">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/7Qg0lF" target="_blank">
+                    <span data-tooltip="Тест &laquo;Мужская и женская обувь Outdoor&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-7">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon icon-8">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-9">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-10">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-11">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="aksessuary" class="icon icon-12">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/PKSHyx" target="_blank">
+                    <span data-tooltip="Курс &laquo;Аксессуары ECCO&raquo;"><img class="znak" src="Images/Green/05-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-13">
+                <img src="Images/Colorless/Ugol-2.png">
+            </div>
+            <div class="icon icon-14">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-15">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+        </div>
+        <div class="conteiner-6">
+            <div class="icon icon-1">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-2">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon icon-3">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="trening-product" class="icon icon-4">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/waGhFh" target="_blank">
+                    <span data-tooltip="Аудиторный тренинг &laquo;Продукт ECCO&raquo;"><img class="znak" src="Images/Orange/10-orange.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-5">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div class="icon icon-6">
+                <img src="Images/Colorless/Ugol-3.png">
+            </div>
+            <div class="icon icon-7">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon icon-8">
+                <img src="Images/Colorless/Ugol-1.png">
+            </div>
+            <div id="sumki" class="icon icon-9">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/Ic3Jlp" target="_blank">
+                    <span data-tooltip="Курс &laquo;Сумки ECCO&raquo;"><img class="znak" src="Images/Green/03-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-10">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-11">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-12">
+                <img src="Images/Colorless/vertikal.png">
+            </div>
+            <div class="icon icon-13">
+                <img src="Images/Colorless/Ugol-4.png">
+            </div>
+            <div id="sredstva-po-ukhodu" class="icon icon-14">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/5zvcWd" target="_blank">
+                    <span data-tooltip="Курс &laquo;Средства по уходу&raquo;"><img class="znak" src="Images/Green/12-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-15">
+                <img src="Images/Colorless/Ugol-3.png">
+            </div>
+        </div>
+        <div class="conteiner-7">
+            <div class="icon icon-1">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="history" class="icon icon-2">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/jjoXUn" target="_blank">
+                    <span data-tooltip="Курс &laquo;История ECCO&raquo;"><img class="znak" src="Images/Green/02-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-3">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div id="stroenie-i-style-shoose" class="icon icon-4">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/N6gFYl" target="_blank">
+                    <span data-tooltip="Курс &laquo;Строение и стили обуви&raquo;"><img class="znak" src="Images/Green/04-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-5">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-6">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div id="technology" class="icon icon-7">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/zxrl2B" target="_blank">
+                    <span data-tooltip="Курс &laquo;Технологии ECCO&raquo;"><img class="znak" src="Images/Green/16-green.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-8">
+                <img src="Images/Colorless/Ugol-3.png">
+            </div>
+            <div class="icon icon-9">
+                <img src="Images/Colorless/Ugol-4.png">
+            </div>
+            <div class="icon icon-10">
+                <img src="Images/Colorless/Gorizontal.png">
+            </div>
+            <div id="trening-sfop" class="icon icon-11">
+                <a href="https://eccoros.lms.mirapolis.ru/mira/s/YJmFqy" target="_blank">
+                    <span data-tooltip="Аудиторный тренинг &laquo;СФОП&raquo;"><img class="znak" src="Images/Orange/10-orange.png"></span>
+                </a>
+            </div>
+            <div class="icon icon-12">
+                <img src="Images/Colorless/Ugol-3.png">
+            </div>
+            <div class="icon icon-13">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-14">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+            <div class="icon icon-15">
+                <img src="Images/Colorless/Colorless.png">
+            </div>
+        </div>
+        <div class="conteiner-8">
+                <ul type="square">
+                    <li>клетка START - вводный Welcome-курс;</li>
+                    <li>зелёные клетки - электронные курсы;</li>
+                    <li>оранжевые клетки - аудиторные тренинги, проводимые в учебном центре;</li>
+                    <li>красные клетки - тестовые задания;</li>
+                    <li>клетка FINISH - аудит СФОП (проводит тренинг-менеджер).</li>
+                </ul>
+        </div>
+    </body>
+</html>
