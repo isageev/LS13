@@ -104,6 +104,14 @@ li {
     margin: 0;
 }
 
+.poisk {
+    display: none;
+}
+
+.zamena {
+    filter: hue-rotate(90deg);
+}
+
     [data-tooltip] {
     position: relative; 
    }
@@ -131,6 +139,29 @@ li {
         </style>
     </head>
     <body>
+        <script>
+            const achiveArr = document.querySelectorAll('.icon')
+            console.log(achiveArr);
+
+            const achiveName = document.querySelectorAll('.poisk')
+            console.log(achiveName);
+
+            let achiveNameArr = []
+
+            achiveName.forEach(function(el) {
+                achiveNameArr.push(el.innerText)
+            })
+
+            console.log(achiveNameArr);
+
+
+            achiveArr.forEach(function(el) {
+                if (achiveNameArr.includes(el.querySelector('.achive-name').innerText)) {
+                    console.log(el);
+                    el.classList.add('zamena')
+                }
+            })
+        </script>
         <div class="conteiner-1">
             <div class="icon">
                 <img src="Images/Colorless/Colorless.png">
@@ -148,6 +179,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/qO36vi" target="_blank">
                     <span data-tooltip="Курс &laquo;Материалы подошв&raquo;"><img class="znak" src="Images/Green/11-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Материалы подошв</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Gorizontal.png">
@@ -156,6 +190,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/z8eMMc" target="_blank">
                     <span data-tooltip="Тест &laquo;Мужская и женская обувь Formal&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Formal</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Colorless.png">
@@ -170,6 +207,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/eFrXZ4" target="_blank">
                     <span data-tooltip="Курс &laquo;Закон о Защите Прав Потребителей&raquo;"><img class="znak" src="Images/Green/15-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Dura lex</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Colorless.png">
@@ -192,6 +232,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/xMeEXm" target="_blank">
                     <span data-tooltip="Курс &laquo;Welcome&raquo;"><img class="znak" src="Images/Start-Finish/start.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Добро пожаловать!</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Colorless.png">
@@ -215,6 +258,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/hy6xsH" target="_blank">
                     <span data-tooltip="Тест &laquo;Отработка этапов СФОП&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Отработка этапов СФОП</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Ugol-3.png">
@@ -232,6 +278,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/pYVuzH" target="_blank">
                     <span data-tooltip="Тест &laquo;Аудит качества использования техник СФОП&raquo;"><img class="znak" src="Images/Start-Finish/finish.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Аудит</p>
+                </div>
             </div>
             <div class="icon icon-10">
                 <img src="Images/Colorless/Colorless.png">
@@ -254,6 +303,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/TmQiA9" target="_blank">
                     <span data-tooltip="Курс &laquo;Материалы верха&raquo;"><img class="znak" src="Images/Green/09-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Материалы верха</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Colorless.png">
@@ -262,6 +314,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/UDnFp0" target="_blank">
                     <span data-tooltip="Курс &laquo;Визуальный мерчендайзинг&raquo;"><img class="znak" src="Images/Green/14-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Все по полочкам</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Colorless.png">
@@ -279,6 +334,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/3aMdFn" target="_blank">
                     <span data-tooltip="Тест &laquo;Товарный ассортимент&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Товарный ассортимент</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="Images/Colorless/Ugol-3.png">
@@ -295,6 +353,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/cA2BHC" target="_blank">
                     <span data-tooltip="Курс &laquo;СФОП&raquo;"><img class="znak" src="Images/Green/01-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Знающий</p>
+                </div>
             </div>
             <div class="icon icon-2">
                 <img src="Images/Colorless/Ugol-2.png">
@@ -306,6 +367,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/1HGDLU" target="_blank">
                     <span data-tooltip="Курс &laquo;Производство кожи&raquo;"><img class="znak" src="Images/Green/08-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Производство кожи</p>
+                </div>
             </div>
             <div class="icon icon-5">
                 <img src="Images/Colorless/Gorizontal.png">
@@ -326,6 +390,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/2G85UK" target="_blank">
                     <span data-tooltip="Курс &laquo;Энциклопедия ECCO&raquo;"><img class="znak" src="Images/Green/24-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Эециклонг</p>
+                </div>
             </div>
             <div class="icon icon-11">
                 <img src="Images/Colorless/Gorizontal.png">
@@ -343,6 +410,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/OPje6w" target="_blank">
                     <span data-tooltip="Тест &laquo;Итоговое задание по курсу &laquo;Продукт&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Звездная система ECCO</p>
+                </div>
             </div>
         </div>
         <div class="conteiner-5">
@@ -353,6 +423,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/8Fccpz" target="_blank">
                     <span data-tooltip="Тест &laquo;Мужская и женская обувь Casual&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Casual</p>
+                </div>
             </div>
             <div class="icon icon-3">
                 <img src="Images/Colorless/Colorless.png">
@@ -367,6 +440,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/7Qg0lF" target="_blank">
                     <span data-tooltip="Тест &laquo;Мужская и женская обувь Outdoor&raquo;"><img class="znak" src="Images/Red/25-red.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Outdoor</p>
+                </div>
             </div>
             <div class="icon icon-7">
                 <img src="Images/Colorless/vertikal.png">
@@ -387,6 +463,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/PKSHyx" target="_blank">
                     <span data-tooltip="Курс &laquo;Аксессуары ECCO&raquo;"><img class="znak" src="Images/Green/05-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Аксессуары</p>
+                </div>
             </div>
             <div class="icon icon-13">
                 <img src="Images/Colorless/Ugol-2.png">
@@ -412,6 +491,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/waGhFh" target="_blank">
                     <span data-tooltip="Аудиторный тренинг &laquo;Продукт ECCO&raquo;"><img class="znak" src="Images/Orange/10-orange.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Продукт</p>
+                </div>
             </div>
             <div class="icon icon-5">
                 <img src="Images/Colorless/Gorizontal.png">
@@ -429,6 +511,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/Ic3Jlp" target="_blank">
                     <span data-tooltip="Курс &laquo;Сумки ECCO&raquo;"><img class="znak" src="Images/Green/03-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Знаток сумчатых</p>
+                </div>
             </div>
             <div class="icon icon-10">
                 <img src="Images/Colorless/Colorless.png">
@@ -446,6 +531,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/5zvcWd" target="_blank">
                     <span data-tooltip="Курс &laquo;Средства по уходу&raquo;"><img class="znak" src="Images/Green/12-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Средства по уходу</p>
+                </div>
             </div>
             <div class="icon icon-15">
                 <img src="Images/Colorless/Ugol-3.png">
@@ -459,6 +547,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/jjoXUn" target="_blank">
                     <span data-tooltip="Курс &laquo;История ECCO&raquo;"><img class="znak" src="Images/Green/02-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Летописец</p>
+                </div>
             </div>
             <div class="icon icon-3">
                 <img src="Images/Colorless/Gorizontal.png">
@@ -467,6 +558,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/N6gFYl" target="_blank">
                     <span data-tooltip="Курс &laquo;Строение и стили обуви&raquo;"><img class="znak" src="Images/Green/04-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Стиляга</p>
+                </div>
             </div>
             <div class="icon icon-5">
                 <img src="Images/Colorless/Colorless.png">
@@ -478,6 +572,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/zxrl2B" target="_blank">
                     <span data-tooltip="Курс &laquo;Технологии ECCO&raquo;"><img class="znak" src="Images/Green/16-green.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Технодром</p>
+                </div>
             </div>
             <div class="icon icon-8">
                 <img src="Images/Colorless/Ugol-3.png">
@@ -492,6 +589,9 @@ li {
                 <a href="https://eccoros.lms.mirapolis.ru/mira/s/YJmFqy" target="_blank">
                     <span data-tooltip="Аудиторный тренинг &laquo;СФОП&raquo;"><img class="znak" src="Images/Orange/10-orange.png"></span>
                 </a>
+                <div class="poisk">
+                    <p>Предложение, от которого невозможно отказаться</p>
+                </div>
             </div>
             <div class="icon icon-12">
                 <img src="Images/Colorless/Ugol-3.png">
